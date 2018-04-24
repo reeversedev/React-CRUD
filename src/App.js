@@ -33,7 +33,7 @@ class App extends Component {
           {this.state.title}
         </h1>
         <div onClick={this.onClick}>Click Me!</div>
-        <MyComponent title="This is the component title" name="Michael" onClick={this.onClick}/>
+        <MyComponent title={2} onClick={this.onClick}/>
       </div>
     );
   }
