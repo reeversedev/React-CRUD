@@ -29,11 +29,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>
-          {this.state.title}
-        </h1>
-        <div onClick={this.onClick}>Click Me!</div>
-        <MyComponent title={2} onClick={this.onClick}/>
+      <input value="name" /> {/* Now in DOM, we won't be able to change the value because now it becomes hard coded */}
+      <input defaultValue="Prateek" />
+      {/* This value can be changed because it is just the default value, so when the DOM loads this value renders but later we can change it */}
       </div>
     );
   }
